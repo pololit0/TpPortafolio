@@ -1,0 +1,64 @@
+[
+    {
+      "id":"1",
+      "nombre":"DAI-Dinsey",
+      "descripcion":" trabajo de la materia DAI",
+      "imagenes":[],
+      "fecha":"Julio 2023",
+      "link": "https://github.com/ivosin06/DAI-Dinsey"
+    },
+    {
+        "id":"2",
+        "nombre":"TO-DOlist",
+        "descripcion":" trabajo de la materia Efsi",
+        "imagenes":[],
+        "fecha":"Abril 2023",
+        "link": "https://github.com/ivosin06/TO-DOlist"
+      }
+      ,
+    {
+        "id":"3",
+        "nombre":"ProyectoFinal",
+        "descripcion":" trabajo de la materia Proyecto final",
+        "imagenes":[],
+        "fecha":" Todo 2023",
+        "link": "https://github.com/monkeyloko/ProyectoFinal"
+      }
+      ,
+      {
+          "id":"4",
+          "nombre":"TpHardware",
+          "descripcion":" trabajo de la materia DAI",
+          "imagenes":[],
+          "fecha":" Noviembre 2023",
+          "link": "https://github.com/monkeyloko/TpHardware"
+        }
+        ,
+      {
+          "id":"5",
+          "nombre":"TP04-EFSI-citas",
+          "descripcion":" trabajo de la materia Efsi",
+          "imagenes":[],
+          "fecha": "Junio 2023",
+          "link": "https://github.com/ivosin06/TP04-EFSI-citas"
+        }
+        ,
+        {
+            "id":"6",
+            "nombre":"TpPizza",
+            "descripcion":" trabajo de la materia DAI",
+            "imagenes":[],
+            "fecha": "Marzo 2023",
+            "link": "https://github.com/ivosin06/TpPizza"
+          }
+          ,
+        {
+            "id":"7",
+            "nombre":"TPEfsi07",
+            "descripcion":" trabajo de la materia Efsi",
+            "imagenes":[],
+            "fecha": "Septiembre 2023",
+            "link": " https://github.com/JMaici/TPEfsi07"
+          }
+         
+  ]
