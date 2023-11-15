@@ -1,9 +1,10 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
+import './Contacto.css'; // Importa un archivo de estilos para Contacto
 
 function Contacto() {
   return (
-    <div className="contacto">
+    <div className="contacto-container">
       <h2>Contacto</h2>
       <Form>
         <Form.Group controlId="formNombre">
@@ -37,3 +38,4 @@ function Contacto() {
 }
 
 export default Contacto;
+
