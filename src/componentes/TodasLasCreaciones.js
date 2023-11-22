@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import MisCreaciones from './Creaciones';
+import MisCreaciones from './Creaciones.js';
 
 function TodasLasCreaciones() {
   const [creaciones, setCreaciones] = useState([]);
@@ -12,7 +12,9 @@ function TodasLasCreaciones() {
   }, []);
 
   return (
+   
     <div>
+       {console.log(creaciones)}
       <h1>Mis Creaciones</h1>
       <MisCreaciones creaciones={creaciones} />
     </div>
