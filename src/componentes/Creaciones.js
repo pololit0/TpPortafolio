@@ -1,12 +1,21 @@
+// Por ejemplo, en MisCreaciones.js
 import React from 'react';
-import Trabajo from './Trabajo.js'; // Asegúrate de la ruta correcta
+import Trabajo from './Trabajo';
+import { useFavoritos } from '../FavoritosContext';
 
 function MisCreaciones({ creaciones }) {
+  const { favoritos, toggleFavorito } = useFavoritos();
+
   return (
     <div className="mis-creaciones">
       <h2>Mis Creaciones</h2>
-      {creaciones && creaciones.map((trabajo) => (
-        <Trabajo key={trabajo.id} trabajo={trabajo} />
+      {creaciones.map((creacion) => (
+        <Trabajo
+          key={creacion.id}
+          creacion={creacion}
+          esFavorito={favoritos.includes(creacion.id)}
+          onToggleFavorito={() => toggleFavorito(creacion.id)}
+        />
       ))}
     </div>
   );

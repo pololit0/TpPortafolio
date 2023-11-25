@@ -1,0 +1,15 @@
+
+.mis-creaciones {
+    /* Estilos generales aquí */
+  }
+  
+  .fila-creaciones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Ajusta según sea necesario */
+  }
+  
+  .trabajo {
+    width: 30%; /* Ajusta según sea necesario */
+  }
+  

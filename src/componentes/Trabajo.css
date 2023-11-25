@@ -1,0 +1,17 @@
+/* Trabajo.css */
+
+.trabajo {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+}
+
+.imagen-trabajo {
+  max-width: 100%;   
+  max-height: 150px;  
+  height: auto;       
+  display: block;     
+  margin: auto;       
+  margin-top: 10px;   
+}

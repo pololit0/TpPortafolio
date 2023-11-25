@@ -1,0 +1,58 @@
+/* Home.css */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .home-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .home-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Estilo específico para los trabajos dentro de MisCreaciones */
+  .trabajo {
+    position: relative;
+  }
+  
+  .trabajo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .trabajo .link-github {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .trabajo .boton-favorito {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .boton-favorito:hover {
+    background-color: #2980b9;
+  }
+  /* Estilos CSS para Home.css (o el nombre de tu archivo de estilos) */
+.trabajos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  
+  /* Estilos adicionales según sea necesario */

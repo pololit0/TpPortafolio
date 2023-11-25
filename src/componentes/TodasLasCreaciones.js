@@ -1,6 +1,7 @@
+// TodasLasCreaciones.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import MisCreaciones from './Creaciones.js';
+import MisCreaciones from './Creaciones';
 
 function TodasLasCreaciones() {
   const [creaciones, setCreaciones] = useState([]);
@@ -11,12 +12,18 @@ function TodasLasCreaciones() {
       .catch((error) => console.error('Error al cargar los datos:', error));
   }, []);
 
+  const handleToggleFavorito = (id) => {
+    // Cambiar el estado de "favorito" para el trabajo con el ID correspondiente
+    setCreaciones((prevCreaciones) =>
+      prevCreaciones.map((creacion) =>
+        creacion.id === id ? { ...creacion, favorito: !creacion.favorito } : creacion
+      )
+    );
+  };
+
   return (
-   
     <div>
-       {console.log(creaciones)}
-      <h1>Mis Creaciones</h1>
-      <MisCreaciones creaciones={creaciones} />
+      <MisCreaciones creaciones={creaciones} onToggleFavorito={handleToggleFavorito} />
     </div>
   );
 }
