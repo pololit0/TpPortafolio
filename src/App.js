@@ -7,7 +7,7 @@ import Favoritos from './componentes/Favoritos';
 import Footer from './componentes/Footer';
 import TodasLasCreaciones from './componentes/TodasLasCreaciones';
 import { FavoritosProvider } from './FavoritosContext';
-
+import InfoPersonal from './componentes/Info';
 function App() {
   return (
     <Router>
@@ -18,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/creaciones" element={<TodasLasCreaciones />} />
             <Route path="/favs" element={<Favoritos />} />
+            <Route path="/Info" element={<InfoPersonal />} />
           </Routes>
           <Footer />
         </div>
