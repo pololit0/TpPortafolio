@@ -1,58 +1,89 @@
 /* Home.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-size: contain; /* Change 'contain' to 'cover' if you prefer covering the entire viewport */
+  background-position: center;
+  font-family: 'Arial', sans-serif; /* Change the font-family if needed */
+  color: #333; /* Default text color */
+}
 .home-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .home-header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .home-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-  
-  /* Estilo específico para los trabajos dentro de MisCreaciones */
-  .trabajo {
-    position: relative;
-  }
-  
-  .trabajo img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .trabajo .link-github {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .trabajo .boton-favorito {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #3498db;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .boton-favorito:hover {
-    background-color: #2980b9;
-  }
-  /* Estilos CSS para Home.css (o el nombre de tu archivo de estilos) */
-.trabajos-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-  }
-  
-  /* Estilos adicionales según sea necesario */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-header h1 {
+  font-size: 2em;
+  color: #fff; /* Set text color to contrast with the background */
+}
+
+.home-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.trabajo {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.9); /* Set a semi-transparent white background */
+}
+
+.trabajo:hover {
+  transform: scale(1.05);
+}
+
+.trabajo h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.trabajo p {
+  margin-bottom: 10px;
+}
+
+.imagen-trabajo {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.enlace-github {
+  display: block;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.enlace-github:hover {
+  background-color: #0056b3;
+}
+
+.favorito-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.favorito-button:hover {
+  background-color: #218838;
+}

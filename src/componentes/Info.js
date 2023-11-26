@@ -1,5 +1,7 @@
+// InfoPersonal.js
+
 import React from 'react';
-import './InfoPersonal.css'; // Asegúrate de tener tu archivo de estilos CSS
+import './InfoPersonal.css';
 
 function InfoPersonal() {
   return (
@@ -8,7 +10,7 @@ function InfoPersonal() {
       <div className="info-texto">
         <h2>¡Hola! Soy Lorenzo Shammah Zalba un estudiante de ORT en la orientación de Informática.</h2>
         <p>
-         No dudes en explorar mi trabajo y proyectos.
+          No dudes en explorar mi trabajo y proyectos.
         </p>
       </div>
     </div>

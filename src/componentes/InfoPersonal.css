@@ -1,8 +1,15 @@
+/* InfoPersonal.css */
+
 .info-personal-container {
+    height: 97vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 20px;
+    background-image: url(C:\Users\Usuario\OneDrive\Desktop\Tpfinal\TpPortafolio\public\Fondo.avif); /* Adjust the path accordingly */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
   }
   
   .foto-personal {

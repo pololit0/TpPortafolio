@@ -1,4 +1,7 @@
+// Trabajo.js
 import React from 'react';
+import { FaGithub } from 'react-icons/fa';
+import './Trabajo.css';
 
 function Trabajo({ creacion, esFavorito, onToggleFavorito }) {
   return (
@@ -7,8 +10,14 @@ function Trabajo({ creacion, esFavorito, onToggleFavorito }) {
       <p>{creacion.descripcion}</p>
       <p>Fecha: {creacion.fecha}</p>
       <img src={creacion.imagenes} alt="Imagen de trabajo" className="imagen-trabajo" />
-      <a href={creacion.link} target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
-      <button onClick={onToggleFavorito}>
+
+      {/* GitHub icon with a larger size */}
+      <a href={creacion.link} target="_blank" rel="noopener noreferrer">
+        <FaGithub size={30} />
+      </a>
+
+      {/* Button with updated design */}
+      <button onClick={onToggleFavorito} className={esFavorito ? 'favorito' : 'no-favorito'}>
         {esFavorito ? 'Quitar de Favoritos' : 'Agregar a Favoritos'}
       </button>
     </div>

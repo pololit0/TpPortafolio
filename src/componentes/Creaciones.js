@@ -8,7 +8,6 @@ function MisCreaciones({ creaciones }) {
 
   return (
     <div className="mis-creaciones">
-      <h2>Mis Creaciones</h2>
       {creaciones.map((creacion) => (
         <Trabajo
           key={creacion.id}
